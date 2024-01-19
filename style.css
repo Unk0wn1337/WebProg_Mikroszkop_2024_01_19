@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 1100px;
+    margin: auto;
+    background-image: url(source/hatter.jpg);
+    background-color: #2eb8b8;
+}
+main{    
+    width: 1100px;
+    background-color: #ffffe6;	
+    font-family: 'Risque', cursive;
+    margin-top: 5px;
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "n a a as"
+                         "f f f f";
+    grid-template-rows: auto 1300px auto auto;
+
+    
+}
+
+
+header {
+    font-family: 'Great Vibes', cursive;
+    background-color: #1f7a7a;
+    color: #ffffe6;
+    display: grid;
+    grid-area: h;
+}
+header h1{
+    margin: auto;
+    margin-top:30px;
+    margin-bottom:30px;
+    width: 80%;
+    text-align: center;
+    font-size: 400%;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ZeusKepSzovegContainer{
+ margin-bottom: 1200px;
+ background-color: #1f7a7a;
+ border: solid 10px #1f7a7a;
+ margin-left: 10px;
+}
+.jobbOldaliSzovegContainer {
+    margin-left: 30px;
+}
+
+nav {
+    display: grid;
+    grid-area: n;
+    
+}
+nav ul {
+    margin-right: 20px;
+} 
+
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px 5px 5px 5px;
+    
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+article {
+    display: grid;
+    grid-area: a;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    
+}
+
+article p {
+    margin-left: 5px;
+}
+article h2 {
+    margin-left: 5px;
+}
+article h3 {
+    margin-left: 5px;
+}
+
+a:hover {
+    color: red;
+}
+
+aside {
+    grid-area: as;
+    margin-left: 10px;
+}
+ 
+aside ul li {
+    list-style-type: none;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #1f7a7a;
+}
+
+
+footer {
+    background-color: #1f7a7a;
+    font-size: 100%;
+    display: grid;
+    grid-area: f;
+    
+}
+
+footer p {
+    visibility: hidden;
+}
+
+section {
+    font-weight: bolder;
+    
+}
+
+@media only screen and (max-width: 600px) {
+   main {
+    display: grid;
+    grid-template-areas: "h"
+                         "n"
+                         "as"
+                         "a"
+                         "f";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+header {
+    width: 25%;
+}
+
+header h1{    
+    width: 20%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.gridContainer {
+    grid-template-columns: 1fr;
+   }
+.ZeusKepSzovegContainer{
+    margin-bottom: 0px;
+    
+}
+nav {
+    background-color: #1f7a7a;
+    margin: 5px 825px 5px 5px;
+    
+    
+    
+}
+nav ul li a {
+    color: white;
+}
+   
+article {
+    width: 25%;
+    border: none;
+}
+
+
+aside {
+    background-color: #1f7a7a;
+    margin: 0px 0px 0px 0px;
+    grid-template-columns: 1fr;   
+    width: 25%;
+}
+    
+aside ul li a {
+    color: white;
+}
+aside p {
+    color: white;
+}
+   
+}
